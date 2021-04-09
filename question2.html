@@ -1,0 +1,23 @@
+<script>
+	
+function max(str){
+	let charmap = {};
+	let max = 0;
+	let maxchar="";
+
+	for(let i of str){
+		charmap[i] = charmap[i] + 1 || 1;
+	}
+
+	for(let i in charmap){
+		if(charmap[i]>max){
+			max= charmap[i];
+			maxchar = i;
+		}
+	}
+	document.write(maxchar);
+}
+
+max("heloooooowqij");
+
+</script>
